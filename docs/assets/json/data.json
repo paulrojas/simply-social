@@ -1,0 +1,58 @@
+{ "posts" : [
+	{
+		"userName": "Sam Soffes",
+		"userAvatar": "../assets/images/sam.jpg",
+		"status": "How to Get Inspired: the Right Way - Designmodo <a href=\"bit.ly/1lE4uJc\">bit.ly/1lE4uJc</a> Good stuff from <a href=\"@designmodo\">@designmodo!</a>",
+		"timeCreated":  "3h",
+		"type": "status",
+		"comments": [
+			{
+				"userName": "Jed Bridges",
+				"userAvatar": "../assets/images/jed.jpg",
+				"comment": "Great way to start the week. Thanks for sharing!",
+				"timeCreated": "5h"
+			},
+			{
+				"userName": "Ren Walker",
+				"userAvatar": "../assets/images/ren.jpg",
+				"comment": "Feeling inspired now... thanks for the great articlce <a href=\"@designmodo\">@designmodo!</a>",
+				"timeCreated": "5h"
+			}
+		]
+	},
+	{
+		"userName": "Meg Robichaud",
+		"userAvatar": "../assets/images/meg.jpg",
+		"status": "My view this morning is simply beatiful... <a href=\"http://instagram.com/p/mV0PUrHRwQ/\">instagram.com/p/mV0PUrHRwQ/</a>",
+		"timeCreated":  "5h",
+		"type": "photo",
+        "resource": "../assets/images/meg-post-photo.jpg",
+		"comments": []
+	},
+	{
+		"userName": "Kerem Suer",
+		"userAvatar": "../assets/images/kerem.jpg",
+		"status": "8 Apps to Turn Your Pipe Dreams Into Prototypes <a href=\"on.mash.to/1oubyu8\">on.mash.to/1oubyu8</a>",
+		"timeCreated":  "5h",
+		"type": "status",
+		"comments": []
+	},
+	{
+		"userName": "Liang Shi",
+		"userAvatar": "../assets/images/liang.jpg",
+		"status": "How to get animations out of your head. <a href=\"http://bit.ly/1q7BngO\">http://bit.ly/1q7BngO</a>  Funny and useful.",
+		"timeCreated":  "5h",
+		"type": "status",
+		"comments": []
+	},
+	{
+		"userName": "Vitor Leal",
+		"userAvatar": "../assets/images/vitor.jpg",
+		"status": "You have to see this bike. It will make your daily commute a absolute joy ride! <a href=\"vimeo.com/p/mV0PUrHRwQ/\">vimeo.com/p/mV0PUrHRwQ/</a>",
+		"timeCreated":  "5h",
+		"type": "video",
+        "resource": "../assets/images/vitor-post-video.jpg",
+		"comments": []
+	}
+]
+}
