@@ -1,0 +1,28 @@
+<div id="post" class="postStyle">
+  <div class="postLeft">
+    <img src="{{ data?.userAvatar }}">
+  </div>
+  <div class="postRight">
+    <div class="rightTitle">
+        <div class="rightName">
+        {{ data?.userName }}
+        </div>
+        <div class="rightNav">
+        <img src="../assets/images/reply.png">
+        <img src="../assets/images/heart.png">
+        <span>{{ data?.timeCreated }}</span>
+        </div>
+      </div>
+      <div class="rightContent">
+        <div class="rightText" [innerHTML]="data?.status"></div>
+        <div *ngIf="data?.comments.length > 0"  class="expandLink"><a href="#">Expand &#x25BC;</a></div>
+      </div>
+  </div>
+  <div class="clear"></div>
+  <div *ngIf="data?.type=='photo'"  class="picturePost">
+    <img [src]="data?.resource">
+  </div>
+  <div *ngIf="data?.type=='video'" class="videoPost">
+    <img [src]="data?.resource">
+  </div>
+</div>

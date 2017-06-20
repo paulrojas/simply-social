@@ -1,3 +1,59 @@
-<h1>
-  {{title}}
-</h1>
+<app-header></app-header>
+<app-hero-nav></app-hero-nav>
+
+<div id="mainContent">
+  <div id="modal">
+    <div class="modal-content">
+      <a href="#" class="btn"><img src="../assets/images/close.png"/></a>
+      <div class="copy">
+          <p class="modalMessage">Create new message</p>
+          <form class="modalInput">
+            <textarea class="modalTextInp" rows="6"></textarea>
+          </form>  
+          <p id="modalCtaLinks" class="modalCtaLinks">
+            <a href="#"><img src="../assets/images/photo.png"/> Add Photo</a>
+            <a href="#" class="ctaPad"><img src="../assets/images/video.png"/> Add Video</a>
+            <a href="#" class="submit">Submit</a>
+          </p>                                     
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <div id="modalAddUser">
+    <div class="modal-content">
+      <a href="#" class="btn"><img src="../assets/images/close.png"/></a>
+      <div class="copy">
+          <p class="modalMessage">Create new user</p>
+          <form class="form-horizontal" #frmJoin (submit)="validateForm(frmJoin)">
+            <div class="form-group">
+              <label for="fname" class="col-sm-3 control-label">First Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="fname" name="fname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="lname" class="col-sm-3 control-label">Last Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="lname" name="lname">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-sm-3 control-label">Email</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="email" name="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10">
+                <button type="submit" class="btn submit">Submit</button>
+              </div>
+            </div>
+          </form>  
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <app-post *ngFor="let item of posts" [data]="item"></app-post>
+</div>
